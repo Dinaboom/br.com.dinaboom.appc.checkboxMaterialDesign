@@ -8,7 +8,7 @@ function init(args) {
 	$.vContainer.applyProperties( _.omit(args, exclude) );
 	
 	if (OS_IOS) {
-		
+		initIos(args);		
 	}
 	else {
 		initAndroid(args);
@@ -16,27 +16,34 @@ function init(args) {
 }
 
 function initAndroid(args) {
-	console.log(args);
 	$.vAndroidSwitch.setTitle(args.title);
 	$.vAndroidSwitch.setTextAlign(args.textAlign || 'left');
+	$.vAndroidSwitch.setValue(args.value || false);
+	
+	$.vAndroidSwitch.on('change', function(e) {
+		setValue($.vAndroidSwitch.getValue());
+	});
 }
 
 function initIos(args) {
-	var exclude = ['id', 'selected', 'title', 'font'];
-	$.vCheckbox.applyProperties( _.omit(args, exclude) );
+	$.vIosTitle.setText(args.title);
 	
-  	setValue(args.selected == 'true');
-	$.title.text = args.title;
+	$.vIos.addEventListener('click', vIosClicked);
 }
 
-function checkboxClick(e) {
+function vIosClicked(e) {
 	setValue(!selected);
-  	$.trigger('change', { value: selected });
 }
 
 function setValue(isSelected) {
   	selected = isSelected;
-	// $.icon.applyProperties( $.createStyle({ classes: 'imc-checkbox-icon-' + (isSelected ? 'selected' : 'normal') }) );
+  	
+  	if (OS_IOS) {
+		var classSelected = (isSelected ? 'iconOn' : 'iconOff');
+		$.vIosIcon.applyProperties( $.createStyle({ classes: [classSelected] }) );
+	}
+	
+	$.trigger('change', { value: selected });
 }
 exports.setValue = setValue;
 

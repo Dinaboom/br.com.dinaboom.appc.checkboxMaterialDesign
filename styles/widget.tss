@@ -14,7 +14,7 @@
 	height: Titanium.UI.SIZE,
 	width: Titanium.UI.FILL,
 },
-"#vAndroidSwitch": {
+"#vAndroidSwitch[platform=android]": {
 	// borderColor: '#009688',
 	color: '#000',
 	style: Titanium.UI.Android.SWITCH_STYLE_CHECKBOX,
@@ -31,24 +31,33 @@
 
 "#vIos": {
 	height: Titanium.UI.SIZE,
-	width: Titanium.UI.FILL,
+	left: 7,
+	right: 7,
 },
 
-"#icon": {
+"#vIosIcon": {
 	borderRadius: 2,
 	height: 18,
-	left: 6,
+	left: 0,
 	width: 18,
 },
-".iconOn": {
-	backgroundColor: '#009688',
-	// borderWidth: 2,
-	backgroundImage: WPATH('/images/ic_done_white_48dp.png'),
+".iconOff": {
+	backgroundColor: 'transparent',
+	backgroundImage: 'none',
+	borderColor: '#000',
+	borderWidth: 2,
+	opacity: 0.54,
 },
-"#title": {
+".iconOn": {
+	backgroundColor: '#009688', // MT Color Teal 500
+	backgroundImage: WPATH('/images/ic_done_white_48dp.png'),
+	borderWidth: 0,
+	opacity: 1,
+},
+"#vIosTitle": {
 	font: {
 		fontSize: 14,
 	},
-	left: 47,
-	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	left: 25,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
 }
