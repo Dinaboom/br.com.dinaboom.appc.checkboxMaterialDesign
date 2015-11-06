@@ -1,0 +1,11 @@
+<Alloy>
+	<View id="vContainer">
+		<View id="vAndroid" platform="android">
+			<Switch id="vAndroidSwitch" value="true" />
+		</View>
+		<!-- <View id="vIos" onClick="checkboxClick" platform="ios">
+			<View id="icon" class="iconOn" />
+			<Label id="title">Filters</Label>
+	</View> -->
+	</View>
+</Alloy>

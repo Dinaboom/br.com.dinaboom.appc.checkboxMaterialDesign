@@ -1,0 +1,13 @@
+{
+	"id": "br.com.dinaboom.appc.checkboxMaterialDesign",
+	"name": "br.com.dinaboom.appc.checkboxMaterialDesign",
+	"description" : "Checkbox Material Design compatible with iOS",
+	"author": "Alisson Chiquitto",
+	"version": "1.0",
+	"copyright":"Copyright (c) 2015",
+	"license":"Public Domain",
+	"min-alloy-version": "1.0",
+	"min-titanium-version":"2.1",
+	"tags":"",
+	"platforms":"android,ios"
+}

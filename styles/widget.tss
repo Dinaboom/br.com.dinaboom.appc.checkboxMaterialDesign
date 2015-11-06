@@ -1,0 +1,54 @@
+/*
+".imc-checkbox" : { height: 24 }
+	".imc-checkbox-icon": { width: 22.5, height: 24, left: 0, touchEnabled: false }
+	".imc-checkbox-icon-normal": { image: '/images/checkbox.png' }
+	".imc-checkbox-icon-selected": { image: '/images/checkbox-on.png' }
+	".imc-checkbox-title": { left: 32.5, color: '#fff', font: { fontSize: 12, fontFamily: 'HelveticaNeue' }, touchEnabled: false }
+*/
+
+"#vContainer": {
+	
+},
+
+"#vAndroid": {
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.FILL,
+},
+"#vAndroidSwitch": {
+	// borderColor: '#009688',
+	color: '#000',
+	style: Titanium.UI.Android.SWITCH_STYLE_CHECKBOX,
+	// textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	title: 'XXXX',
+	// titleOn: 'Notifications Enabled',
+	// titleOff: 'Notifications Disabled',
+	value: true,
+	// left: 10,
+	// right: 10,
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.FILL
+},
+
+"#vIos": {
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.FILL,
+},
+
+"#icon": {
+	borderRadius: 2,
+	height: 18,
+	left: 6,
+	width: 18,
+},
+".iconOn": {
+	backgroundColor: '#009688',
+	// borderWidth: 2,
+	backgroundImage: WPATH('/images/ic_done_white_48dp.png'),
+},
+"#title": {
+	font: {
+		fontSize: 14,
+	},
+	left: 47,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+}
