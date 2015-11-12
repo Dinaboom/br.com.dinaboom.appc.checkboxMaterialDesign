@@ -6,8 +6,14 @@
 	".imc-checkbox-title": { left: 32.5, color: '#fff', font: { fontSize: 12, fontFamily: 'HelveticaNeue' }, touchEnabled: false }
 */
 
-"#vContainer": {
-	
+"#container": {
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.FILL,
+},
+
+"#vContainerInner": {
+	bottom: 6,
+	top: 6,
 },
 
 "#vAndroid": {
@@ -49,7 +55,7 @@
 	opacity: 0.54,
 },
 ".iconOn": {
-	backgroundColor: '#009688', // MT Color Teal 500
+	backgroundColor: '#2196F3', // MT Color Blue 500
 	backgroundImage: WPATH('/images/ic_done_white_48dp.png'),
 	borderWidth: 0,
 	opacity: 1,

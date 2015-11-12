@@ -5,7 +5,7 @@ init(arguments[0] || {});
 var container;
 function init(args) {
 	var exclude = ['id', 'selected', 'title', 'font'];
-	$.vContainer.applyProperties( _.omit(args, exclude) );
+	$.vContainerInner.applyProperties( _.omit(args, exclude) );
 	
 	if (OS_IOS) {
 		initIos(args);		

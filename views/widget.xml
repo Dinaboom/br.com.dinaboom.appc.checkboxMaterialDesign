@@ -1,11 +1,13 @@
 <Alloy>
-	<View id="vContainer">
-		<View id="vAndroid" platform="android">
-			<Switch id="vAndroidSwitch" />
-		</View>
-		<View id="vIos" platform="ios">
-			<View id="vIosIcon" class="iconOff" />
-			<Label id="vIosTitle">Filters</Label>
+	<View id="container">
+		<View id="vContainerInner">
+			<View id="vAndroid" platform="android">
+				<Switch id="vAndroidSwitch" />
+			</View>
+			<View id="vIos" platform="ios">
+				<View id="vIosIcon" class="iconOff" />
+				<Label id="vIosTitle">Filters</Label>
+			</View>
 		</View>
 	</View>
 </Alloy>
